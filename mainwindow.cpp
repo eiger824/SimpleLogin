@@ -12,6 +12,7 @@ MainWindow::MainWindow(QWidget *parent) :
     //ui->label->setStyleSheet("border: 2px solid black;");
     //ui->label_2->setStyleSheet("border: 2px solid black;");
     ui->lineEdit->setStyleSheet("border: 1px solid black;");
+    ui->pushButton_11->setVisible(false);
 }
 
 MainWindow::~MainWindow()
@@ -42,6 +43,8 @@ void MainWindow::on_pushButton_clicked()
         if (m_typed == m_pin) {
             qDebug() << "CORRECT!";
             updateLabel(true);
+            //set button visible
+            ui->pushButton_11->setVisible(true);
         } else {
             updateLabel(false);
         }
@@ -60,6 +63,8 @@ void MainWindow::on_pushButton_2_clicked()
         if (m_typed == m_pin) {
             qDebug() << "CORRECT!";
             updateLabel(true);
+            //set button visible
+            ui->pushButton_11->setVisible(true);
         } else {
             updateLabel(false);
         }
@@ -78,6 +83,8 @@ void MainWindow::on_pushButton_3_clicked()
         if (m_typed == m_pin) {
             qDebug() << "CORRECT!";
             updateLabel(true);
+            //set button visible
+            ui->pushButton_11->setVisible(true);
         } else {
             updateLabel(false);
         }
@@ -96,6 +103,8 @@ void MainWindow::on_pushButton_4_clicked()
         if (m_typed == m_pin) {
             qDebug() << "CORRECT!";
             updateLabel(true);
+            //set button visible
+            ui->pushButton_11->setVisible(true);
         } else {
             updateLabel(false);
         }
@@ -114,6 +123,8 @@ void MainWindow::on_pushButton_6_clicked()
         if (m_typed == m_pin) {
             qDebug() << "CORRECT!";
             updateLabel(true);
+            //set button visible
+            ui->pushButton_11->setVisible(true);
         } else {
             updateLabel(false);
         }
@@ -132,6 +143,8 @@ void MainWindow::on_pushButton_5_clicked()
         if (m_typed == m_pin) {
             qDebug() << "CORRECT!";
             updateLabel(true);
+            //set button visible
+            ui->pushButton_11->setVisible(true);
         } else {
             updateLabel(false);
         }
@@ -150,6 +163,8 @@ void MainWindow::on_pushButton_7_clicked()
         if (m_typed == m_pin) {
             qDebug() << "CORRECT!";
             updateLabel(true);
+            //set button visible
+            ui->pushButton_11->setVisible(true);
         } else {
             updateLabel(false);
         }
@@ -168,6 +183,8 @@ void MainWindow::on_pushButton_9_clicked()
         if (m_typed == m_pin) {
             qDebug() << "CORRECT!";
             updateLabel(true);
+            //set button visible
+            ui->pushButton_11->setVisible(true);
         } else {
             updateLabel(false);
         }
@@ -186,6 +203,8 @@ void MainWindow::on_pushButton_8_clicked()
         if (m_typed == m_pin) {
             qDebug() << "CORRECT!";
             updateLabel(true);
+            //set button visible
+            ui->pushButton_11->setVisible(true);
         } else {
             updateLabel(false);
         }
@@ -203,6 +222,8 @@ void MainWindow::on_pushButton_10_clicked()
         if (m_typed == m_pin) {
             qDebug() << "CORRECT!";
             updateLabel(true);
+            //set button visible
+            ui->pushButton_11->setVisible(true);
         } else {
             updateLabel(false);
         }
@@ -210,4 +231,14 @@ void MainWindow::on_pushButton_10_clicked()
         m_typed += ui->pushButton_10->text();
         ui->lineEdit->setText(m_typed);
     }
+}
+
+void MainWindow::on_pushButton_11_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(1);
+}
+
+void MainWindow::on_pushButton_12_clicked()
+{
+    QApplication::quit();
 }
