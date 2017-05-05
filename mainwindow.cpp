@@ -1,12 +1,17 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include <QDebug>
+#include <QFontDatabase>
+#include <QFont>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    //ui->label->setStyleSheet("border: 2px solid black;");
+    //ui->label_2->setStyleSheet("border: 2px solid black;");
+    ui->lineEdit->setStyleSheet("border: 1px solid black;");
 }
 
 MainWindow::~MainWindow()
